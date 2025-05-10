@@ -1,75 +1,36 @@
-# Nuxt Minimal Starter
+#  Mini-Kinopoisk
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Мини-каталог популярных фильмов, созданный с использованием **Nuxt 3**, **Vue 3** и **неофициального API Кинопоиска**.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## Что реализовано
+
+- ✅ Получение списка популярных фильмов с API
+- ✅ Вывод карточек фильмов с названием, постером, рейтингом и годом
+- ✅ Использование компонента `MovieCard.vue` через `props`
+- ✅ Подключение глобального компонента `Header.vue`
+- ✅ Настройка `.env` и `useRuntimeConfig`
+- ✅ Проверка каждого этапа по ТЗ
+- ✅ Git-флоу с веткой `dev`
+
+---
+
+## Стек технологий
+
+- Nuxt 3
+- Vue 3 (Composition API)
+- Fetch API (`$fetch`)
+- Scoped CSS
+- Git + GitHub
+
+---
+
+## Установка
 
 ```bash
-# npm
+
+git clone https://github.com/your-name/nuxt-mini-kinopoisk.git
+cd nuxt-mini-kinopoisk
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

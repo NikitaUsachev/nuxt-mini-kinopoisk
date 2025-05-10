@@ -3,21 +3,17 @@
 		<h1>🎬 Популярные фильмы</h1>
 
 		<div class="movies-grid">
-			<div
-					v-for="film in films"
-					:key="film.kinopoiskId"
-					class="movie"
-			>
-				<img :src="film.posterUrlPreview" :alt="film.nameRu" />
-				<h3>{{ film.nameRu }}</h3>
-				<p>Год: {{ film.year }}</p>
-				<p>Рейтинг: {{ film.ratingKinopoisk }}</p>
-			</div>
+			<MovieCard
+				v-for="film in films"
+				:key="film.kinopoiskId"
+				:film="film"
+			/>
 		</div>
 	</div>
 </template>
 
 <script setup>
+import MovieCard from '~/components/MovieCard.vue'
 import { ref, onMounted } from "vue";
 
 const films = ref([]);
